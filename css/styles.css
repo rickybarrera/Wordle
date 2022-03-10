@@ -46,7 +46,9 @@ border-bottom: 1px solid grey;
     min-height: 50px;
     font-size: 32px;
     font-weight: bold;
-
+    color: white;
+    display: flex;
+    align-items: center;
 }
 #keyboard-container {
     height: 200px;
