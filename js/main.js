@@ -25,7 +25,7 @@ keys.addEventListener('click', function(evt){
             break;
         } else 
             {
-                
+
             }
             
         // target divs/ square 1
@@ -46,7 +46,7 @@ keys.addEventListener('click', function(evt){
         }
             
         }
-    }) 
+    }
 function displayText(){
     
 }
