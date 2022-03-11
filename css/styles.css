@@ -48,7 +48,7 @@ border-bottom: 1px solid grey;
     font-weight: bold;
     color: white;
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 #keyboard-container {
     height: 200px;
@@ -75,4 +75,16 @@ border-bottom: 1px solid grey;
     border-radius: 4px;
     user-select: none;
 
+}
+.disable-click {
+    pointer-events: none;
+}
+.reset-button {
+    font-size: 32px; 
+    width: 250px;
+    height: 50px;
+}
+#results {
+    font-size: 32px;
+    color: white;
 }
