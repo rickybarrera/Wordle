@@ -9,49 +9,70 @@ let currentGuess = [
     [],
     [],
 ];
-let current = 0 
+let current = 0;
+let i = 0;
+let j = 1;
+let start = 0;
+let box 
+
 // shows in console what clicks/important to eventually playing
 const keys = document.querySelector("#keyboard-container");
 // console.log(keys.length);
 keys.addEventListener('click', function(evt){
-    if(currentGuess[0].length < 5){
+    
+    console.log(current);
+    if(currentGuess[current].length < 5){
         const key = evt.target.getAttribute("data-key")
-        console.log(key);
-        currentGuess[0].push(key);
-        for (let i = 0; i < currentGuess[current].length; i++) {
-            let text = document.getElementById(`${i + 1}`)
-            text.innerText = currentGuess[current][i]
-        if (currentGuess[current][i] === rightGuessString){
-            break;
-        } else 
-            {
-                
-            }
-            
-        // target divs/ square 1
-        console.log(currentGuess[0]);
-        console.log(currentGuess);
+        console.log('key', key);
+        currentGuess[current].push(key);
+        let text = document.getElementById(j.toString())
+        console.log('text:', text);
+        text.innerText = currentGuess[current][i] 
+        
+        console.log('currentGuess', currentGuess[current][i]);
+        i++ 
+        j++
+        
+    let answerCheck = currentGuess[current].join('');
+    console.log(answerCheck);
+    
+    for (let index = 0; index < rightGuessString.length; index++) {
+        
     }
     
-    
-      
-    
-    let answerCheck = currentGuess[0].join('');
-    console.log(answerCheck);
      if (answerCheck.length === 5) {
-          if (answerCheck === rightGuessString){
-            console.log("you win");
+         console.log(current);
+          if (current === 0) {
+              start = 1;
+            //  document.getElementById(current + 5)
+          }
+        for (let index = 0; index < answerCheck.length; index++) {
+            if(answerCheck[index] === rightGuessString[index]){
+                console.log(start);
+                 box = document.getElementById(start.toString())
+            box.style.color = 'green';
+            }
+            start++
+        } 
+          if (answerCheck !== rightGuessString){
+            console.log("wrong");
         } else {
-            console.log("you lose")
+           keys.classList.add("disable-click")
+          let resultss = document.getElementById('results')
+          resultss.textContent = "you Win"
+          console.log(resultss);
+           // console.log("correct");  
+        } while (answerCheck !== rightGuessString && i === 30){
+            let resultss = document.getElementById('results')
+            resultts.textContent = "ur trash"
         }
-            
-        }
-    }) 
-function displayText(){
-    
-}
-
-
+          
+        } 
+    } else {
+        current++
+        i = 0;
+    }
+})
 // need to make function that puts guesses into squares and keeps
 // track of them im thinking into empty arrays and win if string 
 // matches rightGuessString  
@@ -67,6 +88,12 @@ function createSquares() {
     }
 
 }
+const reloadtButton = document.querySelector("#reload");
+function reload() {
+    reload = location.reload();
+}
+// Event listeners for reload
+reloadtButton.addEventListener("click", reload, false);
 
 
 })
@@ -74,3 +101,4 @@ function createSquares() {
 const wordBank = ['ABOUT','ANGER', 'MUSIC']
 let rightGuessString = wordBank[Math.floor(Math.random () * wordBank.length)]
  // winners function 
+ 
