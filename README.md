@@ -7,8 +7,8 @@ My game is Wordle the latest craze in word Games, the premise is simple guess a 
 Tools Used : CSS, HTML, and JavaScript
 
 
-![](https://imgur.com/a/QtAUZIw)
-![](https://imgur.com/5zKFDNs)
+![image screenshot](https://imgur.com/a/QtAUZIw)
+![image screenshot](https://imgur.com/5zKFDNs)
 
 
 
