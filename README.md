@@ -7,8 +7,8 @@ https://rickybarrera.github.io/Wordle/
 Tools Used : CSS, HTML, and JavaScript
 
 
-![image screenshot](https://imgur.com/a/QtAUZIw)
-![image screenshot](https://imgur.com/5zKFDNs)
+![image screenshot](https://i.imgur.com/mCpmfPZ.png)
+![image screenshot](https://i.imgur.com/5zKFDNs.png)
 
 
 
