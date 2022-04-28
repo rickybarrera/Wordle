@@ -64,7 +64,7 @@ keys.addEventListener('click', function(evt){
            // console.log("correct");  
         } while (answerCheck !== rightGuessString && i === 30){
             let resultss = document.getElementById('results')
-            resultts.textContent = "ur trash"
+            results.textContent = "ur trash"
         }
           
         } 
