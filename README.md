@@ -1,4 +1,7 @@
-My game is Wordle the latest craze in word Games, the premise is simple guess a 5 letter word and if is correct after submitting the letter will turn green. If not the leter will stay white
+My first ever project built with JavaScript. 
+You can play the game by clicking the keyboard to try and guess the word.(delete and enter are not working currently) If the letter is in the correct spot it will light up green leading you in the correct direction. If the word is guessed correctly all letters will light up green and the game will end. 
+
+(winning word possibilites: anger, music, about)
 
 https://rickybarrera.github.io/Wordle/
 
