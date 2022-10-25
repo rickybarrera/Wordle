@@ -1,5 +1,5 @@
 My first ever project built with JavaScript. 
-You can play the game by clicking the keyboard to try and guess the word.(delete and enter are not working currently) If the letter is in the correct spot it will light up green leading you in the correct direction. If the word is guessed correctly all letters will light up green and the game will end. 
+You can play the game by clicking the keyboard to try and guess the word.After all 5 spots are full and if your guess is not completely correct double click your next starting letter to beging your next guess. (delete and enter are not working currently) If the letter is in the correct spot it will light up green leading you in the correct direction. If the word is guessed correctly all letters will light up green and the game will end. 
 
 (winning word possibilites: anger, music, about)
 
